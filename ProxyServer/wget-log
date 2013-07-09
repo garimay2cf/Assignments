@@ -1,0 +1,45 @@
+Retrying.
+
+--2013-07-05 22:01:31--  (try: 4)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2013-07-05 22:01:45--  (try: 5)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2013-07-05 22:02:01--  (try: 6)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2013-07-05 22:02:18--  (try: 7)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2013-07-05 22:02:35--  (try: 8)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... failed: Operation timed out.
+Connecting to www.facebook.com|2a03:2880:2110:cf07:face:b00c::1|:80... failed: No route to host.
+Resolving www.facebook.com... 31.13.68.16, 2a03:2880:10:8f07:face:b00c::1
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
+Retrying.
+
+--2013-07-05 22:04:29--  (try: 9)  http://www.facebook.com/
+Connecting to www.facebook.com|31.13.68.16|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://www.facebook.com/unsupportedbrowser [following]
+--2013-07-05 22:04:30--  http://www.facebook.com/unsupportedbrowser
+Reusing existing connection to www.facebook.com:80.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.facebook.com/unsupportedbrowser [following]
+--2013-07-05 22:04:31--  https://www.facebook.com/unsupportedbrowser
+Connecting to www.facebook.com|31.13.68.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘STDOUT’
+
+     0K
