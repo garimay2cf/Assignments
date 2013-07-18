@@ -35,7 +35,7 @@ get '/notices' do
   @notice.to_json
 end
 
-get '/users/:format' do
+get '/users.:format' do
   content_type params[:format]
   @user=Notice.all
   if params[:format]=="json"
@@ -45,7 +45,7 @@ get '/users/:format' do
   end
 end
 
-get '/notices/:format' do
+get '/notices.:format' do
   content_type params[:format]
   @notice=Notice.all
   if params[:format]=="json"
