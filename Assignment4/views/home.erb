@@ -1,0 +1,29 @@
+<section id="add">
+  <form action="/" method="post">
+    <textarea name="nick" placeholder="Enter your name&hellip;" rows ="1"></textarea><br>
+    <textarea name="content" placeholder="Enter an announcement here&hellip;"></textarea><br>
+    <input type="submit" value="Add Notice">
+  </form>
+  </section>
+
+  <div id="Notices" >
+  <% i=0 %>
+  <% j=0 %>
+  <% @notices.each do |notice|%>
+     <article class = "<%= i %>" style="display:none" >
+      <p>
+        <b><%= notice.nick %>:</b><br>
+        <%= notice.content %>
+        <span><a href="/<%= notice.id  %>">(Edit)</a>&nbsp;||&nbsp;<a href="/<%= notice.id  %>/delete">(Delete)</a> </span>
+      </p>
+      <small><p class="meta"> Posted at: <%= notice.created_at.strftime("%a %b %d %Y %H:%M:%S %z %Y") %></p></small>
+    <% j=j+1 %>
+   <% if j%4==0 %>
+       <button class="load-more <%= i  %> ">Load More</button>
+       <%i = i + 1 %>
+   <% end %>
+   </article>
+  <% end %>
+
+  <% i=0 %>
+</div>

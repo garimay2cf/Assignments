@@ -1,0 +1,10 @@
+<% if @notice %>  
+  <p>Are you sure you want to delete the following notice: <em><b><%= @notice.nick  %></b>:"<%= @notice.content %>"</em>?</p>  
+  <form action="/<%= @notice.id %>" method="post">  
+    <input type="hidden" name="_method" value="delete">  
+    <input type="submit" value="Yes, Delete It!">  
+    <a href="/">Cancel</a>  
+  </form>  
+<% else %>  
+      <p>Notice not found.</p>  
+    <% end %>

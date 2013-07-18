@@ -8,7 +8,7 @@ attr_accessor :cell_state
      def get_adjoining_cell_number(grid,x,y,x_min,y_min,x_dim,y_dim)
     alive=0
     if y-1>=y_min
-      alive=alive + grid[x][y-1].cell_state
+      alive+= grid[x][y-1].cell_state
     end
     
     if y+1 < y_dim

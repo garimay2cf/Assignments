@@ -1,0 +1,37 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf8">  
+  <title><%= @title + ' | Notice Board' %></title>  
+  <link href="/reset.css" rel="stylesheet">  
+  <link href="/style.css" rel="stylesheet">  
+  <script type="text/javascript" src='/jquery.min.js'></script>
+  <script src="/application.js"></script>
+  </head>  
+  <body>
+  <center>
+    <div class="navbar-inner  ">
+      &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;[
+    <a href="/users/xml">Users-xml</a> &nbsp; ||
+    <a href="/users/json">Users-json</a> &nbsp; ||
+    <a href="/notices/xml">Notices-xml</a> &nbsp; ||
+    <a href="/notices/json">Notices-json</a>&nbsp;]
+    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+  </div>
+</center>
+    <header>  
+      <hgroup>  
+        <h1 class = "text-center"><a href="/">Notice Board</a></h1>  
+        <h2 class = "text-center">important announcements of the day&hellip;</h2>  
+      </hgroup>  
+    </header>  
+    
+      <div class="offset1">  
+        <%= yield %>  
+      </div>  
+      
+        <footer>  
+          <p class="offset1"><small>An app for <a href="http://hoppr.com">Y2cf</a>.</small></p>  
+        </footer>  
+        </body>  
+        </html>

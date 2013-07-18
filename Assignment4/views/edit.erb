@@ -1,0 +1,11 @@
+<% if @notice %>  
+    <form action="/<%= @notice.id %>" method="post" id="edit">  
+      <input type="hidden" name="_method" value="put">
+      <textarea name="nick"><%= @notice.nick %></textarea><br>
+      <textarea name="content"><%= @notice.content %></textarea><br>
+    <input type="submit">  
+  </form>  
+  <p><a href="/<%= @notice.id %>/delete">Delete</a>&nbsp;||&nbsp;<a href="/">Go Back</a><p>  
+<% else %>  
+      <p>Notice not found.</p>  
+    <% end %> 
